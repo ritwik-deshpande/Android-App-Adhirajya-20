@@ -58,9 +58,9 @@ public class MainActivity extends AppCompatActivity
 
         // Adding Fragments
 
-        viewPagerAdapter.addFragment(new EventFragment(), "announcements");
+        viewPagerAdapter.addFragment(new Announcements(), "announcements");
         viewPagerAdapter.addFragment(new EventFragment(), "EVENTS");
-        viewPagerAdapter.addFragment(new EventFragment(), "departments");
+//        viewPagerAdapter.addFragment(new EventFragment(), "departments");
         viewPagerAdapter.addFragment(new PointsFragment(), "scoreboard");
 
 

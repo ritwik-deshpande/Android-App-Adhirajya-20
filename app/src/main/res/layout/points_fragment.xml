@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent">
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Main Events"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:background="#f1f1f1f1"
+
+        >
+            <TextView
+                android:layout_width="43dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_weight="1"
+                android:text="Department"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:text="Day 1"
+                android:textStyle = "bold"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:text="Day 2"
+                android:textStyle = "bold"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:text="Day 3"
+                android:textStyle = "bold"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:text="Day 4"
+                android:textStyle = "bold"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:text="Day 5"
+                android:textStyle = "bold"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:text="Day 6"
+                android:textStyle = "bold"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:text="Day 7"
+                android:textStyle = "bold"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:text="Day 8"
+                android:textStyle = "bold"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="20dp"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:text="Day 9"
+                android:textStyle = "bold"/>
+            <TextView
+                android:layout_height="wrap_content"
+                android:layout_width="30dp"
+                android:layout_gravity="center"
+                android:textSize="10sp"
+                android:layout_weight="1"
+                android:text="Total"
+                android:textStyle = "bold"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/points_event_recyclerview"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:text="Enthu Points"
+        android:layout_marginVertical="10dp"
+        android:layout_marginHorizontal="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="10dp"
+        android:orientation="horizontal"
+        android:background="#f1f1f1f1"
+
+        >
+        <TextView
+            android:layout_width="43dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:layout_weight="1"
+            android:text="Department"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="Day 1"
+            android:textStyle = "bold"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="Day 2"
+            android:textStyle = "bold"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="Day 3"
+            android:textStyle = "bold"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="Day 4"
+            android:textStyle = "bold"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="Day 5"
+            android:textStyle = "bold"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="Day 6"
+            android:textStyle = "bold"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="Day 7"
+            android:textStyle = "bold"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="Day 8"
+            android:textStyle = "bold"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="20dp"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="Day 9"
+            android:textStyle = "bold"/>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="30dp"
+            android:layout_gravity="center"
+            android:textSize="10sp"
+            android:layout_weight="1"
+            android:text="Total"
+            android:textStyle = "bold"/>
+
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:layout_marginHorizontal="10dp"
+        android:id="@+id/enthu_points_event_recyclerview"
+        >
+    </android.support.v7.widget.RecyclerView>
+
+
+
+
+
+    <!--            <TextView-->
+<!--                android:id="@+id/department_name"-->
+<!--                android:layout_width="43dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:text="CSE"-->
+
+<!--                android:textSize="10sp"-->
+<!--                android:textStyle="bold" />-->
+<!--            <TextView-->
+<!--                android:id="@+id/day_1"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/day_2"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/day_3"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/day_4"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/day_5"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/day_6"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/day_7"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/day_8"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/day_9"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:id="@+id/total"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="20dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:background="#ffffff">-->
+
+<!--            <TextView-->
+
+<!--                android:layout_width="39dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:text="MECH"-->
+
+<!--                android:textSize="10sp"-->
+<!--                android:textStyle="bold" />-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="5"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="4"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="3"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="112"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="48"-->
+<!--                android:textStyle = "bold"/>-->
+
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:background="#ffffff">-->
+
+<!--            <TextView-->
+
+<!--                android:layout_width="39dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:text="ECE"-->
+
+<!--                android:textSize="10sp"-->
+<!--                android:textStyle="bold" />-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="5"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="4"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="3"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="112"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="48"-->
+<!--                android:textStyle = "bold"/>-->
+
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:background="#ffffff">-->
+
+<!--            <TextView-->
+
+<!--                android:layout_width="39dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:text="EEE"-->
+
+<!--                android:textSize="10sp"-->
+<!--                android:textStyle="bold" />-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="5"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="4"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="3"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="112"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="48"-->
+<!--                android:textStyle = "bold"/>-->
+
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:background="#ffffff">-->
+
+<!--            <TextView-->
+
+<!--                android:layout_width="39dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:text="ARCHI"-->
+
+<!--                android:textSize="10sp"-->
+<!--                android:textStyle="bold" />-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="5"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="4"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="3"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="112"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="48"-->
+<!--                android:textStyle = "bold"/>-->
+
+<!--        </TableRow>-->
+<!--        <TableRow-->
+<!--            android:background="#ffffff">-->
+
+<!--            <TextView-->
+
+<!--                android:layout_width="39dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:text="CHEM"-->
+
+<!--                android:textSize="10sp"-->
+<!--                android:textStyle="bold" />-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="5"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="4"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="3"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="112"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="48"-->
+<!--                android:textStyle = "bold"/>-->
+
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:background="#ffffff">-->
+
+<!--            <TextView-->
+
+<!--                android:layout_width="39dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:layout_weight="1"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:text="CIVIL"-->
+
+<!--                android:textSize="10sp"-->
+<!--                android:textStyle="bold" />-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="10"-->
+<!--                android:layout_marginVertical="0.1dp"-->
+<!--                android:layout_marginHorizontal="0.1dp"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="5"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="4"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="3"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="112"-->
+<!--                android:textStyle = "bold"/>-->
+<!--            <TextView-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_gravity="left"-->
+<!--                android:textSize="10sp"-->
+<!--                android:layout_weight="1"-->
+<!--                android:text="48"-->
+<!--                android:textStyle = "bold"/>-->
+
+<!--        </TableRow>-->
+
+<!--        <TableRow-->
+<!--            android:background="#ffffff">-->
+
+
+
+
+<!--        </TableRow>-->
+
+
+
+
+
+
+
+<!--    </TableLayout>-->
+
+
+</LinearLayout>

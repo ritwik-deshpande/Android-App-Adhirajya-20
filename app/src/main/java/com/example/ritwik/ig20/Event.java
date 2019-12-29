@@ -2,11 +2,21 @@ package com.example.ritwik.ig20;
 
 import java.io.Serializable;
 import java.util.Dictionary;
+import java.util.List;
 
 public class Event implements Serializable {
     String eventName;
     String desc;
-
+    String Image;
+    String rules;
+    int csePts;
+    int ecePts;
+    int mmePts;
+    int civPts;
+    int metaPts;
+    int chemPts;
+    int eeePts;
+    int archiPts;
     public String getImage() {
         return Image;
     }
@@ -16,7 +26,7 @@ public class Event implements Serializable {
     }
 
     //    int fixtures;
-    String Image;
+
 
 
     public String getEventName() {
@@ -35,18 +45,10 @@ public class Event implements Serializable {
         this.desc = desc;
     }
 
-//    public Dictionary getPoints() {
-//        return points;
-//    }
-//
-//    public void setPoints(Dictionary points) {
-//        this.points = points;
-//    }
 
-    public Event(String eventName, String desc ,String Image) {
+    public Event(String eventName, String desc , String Image) {
         this.eventName = eventName;
         this.desc = desc;
         this.Image = Image;
-
     }
 }

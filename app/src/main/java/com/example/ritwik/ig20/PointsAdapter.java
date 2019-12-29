@@ -48,20 +48,20 @@ public class PointsAdapter extends  RecyclerView.Adapter<PointsAdapter.MyViewHol
 
         if(label.equals("Main Events")){
             int totalScore = 0;
-            for (int j=0;j<9;j++){
-                Log.d("TAGGGGG","The Score is "+Integer.toString(list.get(i).getDailyScores()[j]));
-                myViewHolder.dailyScores.get(j).setText(Integer.toString(list.get(i).getDailyScores()[j]));
-                totalScore = totalScore + list.get(i).getDailyScores()[j];
+            for (int j=0;j<10;j++){
+               // Log.d("TAGGGGG","The Score is "+Integer.toString(list.get(i).getDailyScores()[j]));
+                myViewHolder.dailyScores.get(j).setText(Long.toString(list.get(i).getDailyScores().get(j)));
+                totalScore = totalScore + (list.get(i).getDailyScores().get(j)).intValue();
             }
             myViewHolder.totalScore.setText(Integer.toString(totalScore));
 
         }
         else if(label.equals("Enthu Points")){
             int totalScore = 0;
-            for (int j=0;j<9;j++){
-                Log.d("TAGGGGG","The Score is "+Integer.toString(list.get(i).getEnthuPoints()[j]));
-                myViewHolder.dailyScores.get(j).setText(Integer.toString(list.get(i).getEnthuPoints()[j]));
-                totalScore = totalScore + list.get(i).getDailyScores()[j];
+            for (int j=0;j<10;j++){
+//                Log.d("TAGGGGG","The Score is "+Integer.toString(list.get(i).getEnthuPoints()[j]));
+                myViewHolder.dailyScores.get(j).setText(Integer.toString(list.get(i).getEnthuPoints().get(j)));
+                totalScore = totalScore + list.get(i).getEnthuPoints().get(j);
             }
             myViewHolder.totalScore.setText(Integer.toString(totalScore));
         }
@@ -86,7 +86,7 @@ public class PointsAdapter extends  RecyclerView.Adapter<PointsAdapter.MyViewHol
 
             departmentName = (TextView)itemView.findViewById(R.id.department_name);
             totalScore = (TextView)itemView.findViewById(R.id.total);
-            for (int i=1;i<=9;i++){
+            for (int i=1;i<=10;i++){
                 String name = "day_"+i;
                 int id = itemView.getResources().getIdentifier(name,"id",context.getPackageName());
                 if (id!=0){

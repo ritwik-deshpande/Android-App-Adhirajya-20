@@ -28,5 +28,6 @@ public class EventActivity extends AppCompatActivity {
         EventsActivityAdapter eventsActivityAdapter = new EventsActivityAdapter(this,events);
         recyclerView.setAdapter(eventsActivityAdapter);
 
+
     }
 }

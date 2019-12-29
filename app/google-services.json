@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "754880441005",
+    "firebase_url": "https://ig20-6b0c6.firebaseio.com",
+    "project_id": "ig20-6b0c6",
+    "storage_bucket": "ig20-6b0c6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:754880441005:android:8e5aa17c19c20618ac7424",
+        "android_client_info": {
+          "package_name": "com.example.ritwik.ig20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "754880441005-4i5so7f8svt4v6qfdhbl5h898ro4jlko.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ritwik.ig20",
+            "certificate_hash": "b00ae6bbd852e504e2684b97a57e2280fd644c6e"
+          }
+        },
+        {
+          "client_id": "754880441005-f62uvgk3ohrj1iv70fk8r6a4j052asdt.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4-vhkC5wlPO_ZQeWzGOophZ83cc-1uUo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "754880441005-f62uvgk3ohrj1iv70fk8r6a4j052asdt.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

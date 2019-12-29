@@ -8,10 +8,135 @@
     tools:context=".EventDetails"
     tools:showIn="@layout/activity_event_details">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="@dimen/text_margin"
-        android:text="@string/large_text" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
-</android.support.v4.widget.NestedScrollView>
+
+
+        <android.support.v7.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/activity_horizontal_margin"
+            android:layout_marginTop="8dp"
+            android:orientation="vertical">
+
+            <!--DESCRIPTION-->
+            <android.support.v7.widget.CardView
+                android:id="@+id/description_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Description_Card">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_event_description"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="8dp"
+                        android:text="Information:"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_marginLeft="8dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/description_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:autoLink="web"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/rules_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Description_Card">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_event_rules"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="8dp"
+                        android:text="Rules :"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_marginLeft="8dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/rules_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:paddingEnd="8dp"
+                        android:paddingStart="8dp"
+                        android:autoLink="web"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/points_card"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/Description_Card">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="4dp">
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/tv_event_points"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginStart="8dp"
+                        android:text="Points Table:"
+                        android:textColor="@color/colorPrimary"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+                        android:layout_marginLeft="8dp" />
+
+                    <android.support.v7.widget.AppCompatTextView
+                        android:id="@+id/points_textView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="4dp"
+                        android:textAlignment="center"
+                        android:layout_marginLeft="20dp"
+                        android:textSize="20dp"
+                        android:paddingEnd="8dp"
+                        android:text="CSE : 20\nECE : 40 \nCSE : 20\nCSE : 20\nCSE : 20\nCSE : 20\nCSE : 20\nCSE : 20\n"
+                        android:paddingStart="8dp"
+                        android:autoLink="web"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+
+
+
+
+        </android.support.v7.widget.LinearLayoutCompat>
+    </ScrollView>
+
+ </android.support.v4.widget.NestedScrollView>

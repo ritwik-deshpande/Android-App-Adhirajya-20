@@ -1,9 +1,15 @@
 package com.example.ritwik.ig20;
 
+import java.util.List;
+
 class Department {
     String departmentName;
-    int dailyScores[];
-    int enthuPoints[];
+    List<Integer> dailyScores;
+    List<Integer> enthuPoints;
+
+    public Department(){
+
+    }
 
 
     public String getDepartmentName() {
@@ -14,11 +20,11 @@ class Department {
         this.departmentName = departmentName;
     }
 
-    public int[] getDailyScores() {
+    public List<Integer> getDailyScores() {
         return dailyScores;
     }
 
-    public void setDailyScores(int[] dailyScores) {
+    public void setDailyScores(List<Integer> dailyScores) {
         this.dailyScores = dailyScores;
     }
 //    public int getDay1score() {
@@ -29,15 +35,15 @@ class Department {
 //        this.day1score = day1score;
 //    }
 
-    public int[] getEnthuPoints() {
+    public List<Integer> getEnthuPoints() {
         return enthuPoints;
     }
 
-    public void setEnthuPoints(int[] enthuPoints) {
+    public void setEnthuPoints(List<Integer> enthuPoints) {
         this.enthuPoints = enthuPoints;
     }
 
-    public Department(String departmentName, int dailyscore[], int enthuPoints[]) {
+    public Department(String departmentName, List<Integer> dailyscore, List<Integer> enthuPoints) {
         this.departmentName = departmentName;
         this.dailyScores  =  dailyscore;
         this.enthuPoints = enthuPoints;

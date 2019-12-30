@@ -1,5 +1,6 @@
 package com.example.ritwik.ig20;
 
+import android.app.ProgressDialog;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -107,11 +108,16 @@ public class EventFragment extends Fragment {
         getData();
 
 
+
         return v;
 
     }
 
     private void getData() {
+
+        final ProgressDialog dialog = new ProgressDialog(getContext());
+        dialog.setMessage("Loading....");
+        dialog.show();
         myRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
@@ -126,6 +132,7 @@ public class EventFragment extends Fragment {
 
 
                 }
+                dialog.hide();
                 updateUI();
                 Log.d("TAG","The size of list "+lst.size());
 

@@ -4,8 +4,8 @@ import java.util.List;
 
 class Department {
     String departmentName;
-    List<Integer> dailyScores;
-    List<Integer> enthuPoints;
+    List<Double> dailyScores;
+    List<Double> enthuPoints;
 
     public Department(){
 
@@ -20,11 +20,11 @@ class Department {
         this.departmentName = departmentName;
     }
 
-    public List<Integer> getDailyScores() {
+    public List<Double> getDailyScores() {
         return dailyScores;
     }
 
-    public void setDailyScores(List<Integer> dailyScores) {
+    public void setDailyScores(List<Double> dailyScores) {
         this.dailyScores = dailyScores;
     }
 //    public int getDay1score() {
@@ -35,15 +35,15 @@ class Department {
 //        this.day1score = day1score;
 //    }
 
-    public List<Integer> getEnthuPoints() {
+    public List<Double> getEnthuPoints() {
         return enthuPoints;
     }
 
-    public void setEnthuPoints(List<Integer> enthuPoints) {
+    public void setEnthuPoints(List<Double> enthuPoints) {
         this.enthuPoints = enthuPoints;
     }
 
-    public Department(String departmentName, List<Integer> dailyscore, List<Integer> enthuPoints) {
+    public Department(String departmentName, List<Double> dailyscore, List<Double> enthuPoints) {
         this.departmentName = departmentName;
         this.dailyScores  =  dailyscore;
         this.enthuPoints = enthuPoints;

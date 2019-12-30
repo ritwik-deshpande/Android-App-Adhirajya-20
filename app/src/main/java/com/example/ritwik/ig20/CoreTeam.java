@@ -37,6 +37,7 @@ public class CoreTeam extends AppCompatActivity {
 //            }
 //        });
 
+        setTitle("STUDENT COUNCIL");
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override

@@ -15,11 +15,11 @@ public class EventActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_event);
-        setTitle("Cultural Events");
+
 
         events = (List<Event>) getIntent().getSerializableExtra("EventsListExtra");
-
-        setTitle(events.get(0).getEventName());
+        String title = getIntent().getStringExtra("EventType");
+        setTitle(title.toUpperCase());
 
         RecyclerView recyclerView = findViewById(R.id.event_activity_recyclerview);
 

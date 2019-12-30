@@ -61,6 +61,7 @@ public class EventsAdapter extends RecyclerView.Adapter<EventsAdapter.MyViewHold
                 Intent intent = new Intent(context,EventActivity.class);
 
                 intent.putExtra("EventsListExtra", (Serializable) lst.get(i).getEvents());
+                intent.putExtra("EventType",lst.get(i).getGroup_name());
                 context.startActivity(intent);
 
 

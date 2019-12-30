@@ -1,6 +1,8 @@
 package com.example.ritwik.ig20;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -16,6 +18,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
@@ -30,6 +33,8 @@ public class MainActivity extends AppCompatActivity
     private TabLayout tabLayout;
     ViewPagerAdapter viewPagerAdapter;
     ViewPager viewPager;
+    ImageButton fb;
+    ImageButton insta;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -38,14 +43,9 @@ public class MainActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-        fab.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
-            }
-        });
+
+
+        setTitle("ADHIRAJYA20");
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -56,44 +56,66 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        FirebaseDatabase database = FirebaseDatabase.getInstance();
-        DatabaseReference myRef = database.getReference("child6");
-        DatabaseReference myRef2 = database.getReference().child("Points");
-        Log.d("TAG","Writing to Firebase");
+        fb = findViewById(R.id.fb);
+        insta = findViewById(R.id.insta);
 
-        myRef.setValue("Hello, World!");
-
-        final String[] value = new String[1];
-
-        final int[] a = new int[1];
-
-        myRef2.addValueEventListener(new ValueEventListener() {
+        fb.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onDataChange(DataSnapshot dataSnapshot) {
-                // This method is called once with the initial value and again
-                // whenever data at this location is updated.
-
-               // value[0] = (String) dataSnapshot.getValue(String.class);
-
-              //  Toast.makeText(this,"retrieving data"+value[0],Toast.LENGTH_SHORT).show();
-
-//                a[0] = ((Long)dataSnapshot.child("d1").child("dailyScore").child("0").getValue()).intValue();
-//
-//                Log.d("TAG", "Value is: " + a[0]);
+            public void onClick(View view) {
+                String url = "http://vnit.ac.in/";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
             }
-
+        });
+        insta.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onCancelled(DatabaseError error) {
-                // Failed to read value
-                Log.d("TAG", "Failed to read value.", error.toException());
+            public void onClick(View view) {
+                String url = "http://vnit.ac.in/";
+                Intent i = new Intent(Intent.ACTION_VIEW);
+                i.setData(Uri.parse(url));
+                startActivity(i);
             }
         });
 
+//        FirebaseDatabase database = FirebaseDatabase.getInstance();
+//        DatabaseReference myRef = database.getReference("child6");
+//        DatabaseReference myRef2 = database.getReference().child("Points");
+//        Log.d("TAG","Writing to Firebase");
+//
+//        myRef.setValue("Hello, World!");
+//
+//        final String[] value = new String[1];
+//
+//        final int[] a = new int[1];
+//
+//        myRef2.addValueEventListener(new ValueEventListener() {
+//            @Override
+//            public void onDataChange(DataSnapshot dataSnapshot) {
+//                // This method is called once with the initial value and again
+//                // whenever data at this location is updated.
+//
+//               // value[0] = (String) dataSnapshot.getValue(String.class);
+//
+//              //  Toast.makeText(this,"retrieving data"+value[0],Toast.LENGTH_SHORT).show();
+//
+////                a[0] = ((Long)dataSnapshot.child("d1").child("dailyScore").child("0").getValue()).intValue();
+////
+////                Log.d("TAG", "Value is: " + a[0]);
+//            }
+//
+//            @Override
+//            public void onCancelled(DatabaseError error) {
+//                // Failed to read value
+//                Log.d("TAG", "Failed to read value.", error.toException());
+//            }
+//        });
+//
+//
+//        Toast.makeText(this,"retrieving data"+value[0],Toast.LENGTH_SHORT).show();
 
-        Toast.makeText(this,"retrieving data"+value[0],Toast.LENGTH_SHORT).show();
 
 
-        setTitle(value[0]);
 
 
 
@@ -102,6 +124,9 @@ public class MainActivity extends AppCompatActivity
 
 
         tabLayout = (TabLayout) findViewById(R.id.tabLayout_id);
+        tabLayout.setSelectedTabIndicatorColor(Color.parseColor("#FF0000"));
+        tabLayout.setSelectedTabIndicatorHeight((int) (5 * getResources().getDisplayMetrics().density));
+        tabLayout.setTabTextColors(Color.parseColor("#727272"), Color.parseColor("#ffffff"));
         viewPager = (ViewPager) findViewById(R.id.viewpager_id);
         viewPagerAdapter = new ViewPagerAdapter(getSupportFragmentManager());
 

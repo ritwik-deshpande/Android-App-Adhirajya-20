@@ -23,6 +23,9 @@ public class PointsAdapter extends  RecyclerView.Adapter<PointsAdapter.MyViewHol
         this.list = list;
         this.label = label;
         Log.d("TAGGGGG","The list size in Adpater is"+list.size());
+        for(int i=0;i<8;i++) {
+            Log.d("TAG", "Dname Adpater:" +list.get(i).getDepartmentName() );
+        }
     }
 
 
@@ -43,27 +46,27 @@ public class PointsAdapter extends  RecyclerView.Adapter<PointsAdapter.MyViewHol
     @Override
     public void onBindViewHolder(@NonNull MyViewHolder myViewHolder, final int i) {
 
-        Log.d("TAGGGGG","The deprtmnet name "+list.get(i).getDepartmentName());
+        Log.d("TAGGGGG","The departmnet name "+list.get(i).getDepartmentName()+"  i"+ i);
         myViewHolder.departmentName.setText(list.get(i).getDepartmentName());
 
         if(label.equals("Main Events")){
             int totalScore = 0;
             for (int j=0;j<10;j++){
                // Log.d("TAGGGGG","The Score is "+Integer.toString(list.get(i).getDailyScores()[j]));
-                myViewHolder.dailyScores.get(j).setText(Long.toString(list.get(i).getDailyScores().get(j)));
+                myViewHolder.dailyScores.get(j).setText(Integer.toString(list.get(i).getDailyScores().get(j).intValue()));
                 totalScore = totalScore + (list.get(i).getDailyScores().get(j)).intValue();
             }
             myViewHolder.totalScore.setText(Integer.toString(totalScore));
 
         }
         else if(label.equals("Enthu Points")){
-            int totalScore = 0;
+            double totalScore = 0;
             for (int j=0;j<10;j++){
 //                Log.d("TAGGGGG","The Score is "+Integer.toString(list.get(i).getEnthuPoints()[j]));
-                myViewHolder.dailyScores.get(j).setText(Integer.toString(list.get(i).getEnthuPoints().get(j)));
+                myViewHolder.dailyScores.get(j).setText(Double.toString(list.get(i).getEnthuPoints().get(j)));
                 totalScore = totalScore + list.get(i).getEnthuPoints().get(j);
             }
-            myViewHolder.totalScore.setText(Integer.toString(totalScore));
+            myViewHolder.totalScore.setText(Double.toString(totalScore));
         }
 
 //        myViewHolder.day1score.setText(Integer.toString(list.get(i).getDay1score()));

@@ -11,7 +11,27 @@ public class Event implements Serializable {
     String rules;
     int csePts;
     int ecePts;
-    int mmePts;
+
+    public Event(){
+
+    }
+
+    public Event(String eventName, String desc, String image, String rules, int csePts, int ecePts, int mechPts, int civPts, int metaPts, int chemPts, int eeePts, int archiPts) {
+        this.eventName = eventName;
+        this.desc = desc;
+        Image = image;
+        this.rules = rules;
+        this.csePts = csePts;
+        this.ecePts = ecePts;
+        this.mechPts = mechPts;
+        this.civPts = civPts;
+        this.metaPts = metaPts;
+        this.chemPts = chemPts;
+        this.eeePts = eeePts;
+        this.archiPts = archiPts;
+    }
+
+    int mechPts;
     int civPts;
     int metaPts;
     int chemPts;
@@ -45,10 +65,75 @@ public class Event implements Serializable {
         this.desc = desc;
     }
 
+    public String getRules() {
+        return rules;
+    }
 
-    public Event(String eventName, String desc , String Image) {
-        this.eventName = eventName;
-        this.desc = desc;
-        this.Image = Image;
+    public void setRules(String rules) {
+        this.rules = rules;
+    }
+
+    public int getCsePts() {
+        return csePts;
+    }
+
+    public void setCsePts(int csePts) {
+        this.csePts = csePts;
+    }
+
+    public int getEcePts() {
+        return ecePts;
+    }
+
+    public void setEcePts(int ecePts) {
+        this.ecePts = ecePts;
+    }
+
+    public int getmechPts() {
+        return mechPts;
+    }
+
+    public void setmechPts(int mechPts) {
+        this.mechPts = mechPts;
+    }
+
+    public int getCivPts() {
+        return civPts;
+    }
+
+    public void setCivPts(int civPts) {
+        this.civPts = civPts;
+    }
+
+    public int getMetaPts() {
+        return metaPts;
+    }
+
+    public void setMetaPts(int metaPts) {
+        this.metaPts = metaPts;
+    }
+
+    public int getChemPts() {
+        return chemPts;
+    }
+
+    public void setChemPts(int chemPts) {
+        this.chemPts = chemPts;
+    }
+
+    public int getEeePts() {
+        return eeePts;
+    }
+
+    public void setEeePts(int eeePts) {
+        this.eeePts = eeePts;
+    }
+
+    public int getArchiPts() {
+        return archiPts;
+    }
+
+    public void setArchiPts(int archiPts) {
+        this.archiPts = archiPts;
     }
 }

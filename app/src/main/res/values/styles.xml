@@ -12,6 +12,7 @@
         <item name="windowActionBar">false</item>
         <item name="windowNoTitle">true</item>
     </style>
+
     <style name="Description_Card" parent="CardView">
         <item name="cardBackgroundColor">@color/card_background</item>
         <item name="cardElevation">2dp</item>

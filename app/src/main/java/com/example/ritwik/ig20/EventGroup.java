@@ -8,6 +8,10 @@ public class EventGroup {
     String image;
     List<Event> events;
 
+    public EventGroup(){
+
+    }
+
     public EventGroup(String group_name, String image, List<Event> events) {
         this.group_name = group_name;
         this.image = image;

@@ -1,50 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="215dp"
+    android:layout_height="wrap_content"
     xmlns:cardview="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical"
     android:padding="5dp"
     android:id="@+id/parent_layout">
 
-    <android.support.v7.widget.CardView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        cardview:cardCornerRadius="10dp"
-        >
-        <FrameLayout
+        <android.support.v7.widget.CardView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-
+            android:layout_height="175dp"
+            android:layout_marginBottom="10dp"
+            cardview:cardCornerRadius="10dp"
             >
 
             <ImageView
                 android:id="@+id/news_img"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:scaleType="centerCrop"
+                android:layout_height="175dp"
 
-                />
-
-            <TextView
-                android:layout_marginTop="150dp"
-
-                android:id="@+id/news_content"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:textSize="15sp"
-                android:text="Football Round 1: Results CSE beats Archi 2-1, Chem beats CIVIL 4-0"
-                android:textColor="#ffffff"
-                />
+                android:scaleType="centerCrop" />
 
 
 
+        </android.support.v7.widget.CardView>
 
-        </FrameLayout>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:textColor="@color/colorPrimaryDark"
+
+            android:fontFamily="@font/content"
+
+            android:id="@+id/news_content"
+            android:text="Inaugration Ceremony to start at 5:00pm VNIT  Ground B there on time all departments"/>
 
 
 
 
-    </android.support.v7.widget.CardView>
+
 
 </LinearLayout>

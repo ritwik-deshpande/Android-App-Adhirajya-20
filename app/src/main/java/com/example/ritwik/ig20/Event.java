@@ -8,19 +8,25 @@ public class Event implements Serializable {
     String eventName;
     String desc;
     String Image;
-    String rules;
+    String venue;
     int csePts;
     int ecePts;
+    int mechPts;
+    int civPts;
+    int metaPts;
+    int chemPts;
+    int eeePts;
+    int archiPts;
 
     public Event(){
 
     }
 
-    public Event(String eventName, String desc, String image, String rules, int csePts, int ecePts, int mechPts, int civPts, int metaPts, int chemPts, int eeePts, int archiPts) {
+    public Event(String eventName, String desc, String image, String venue, int csePts, int ecePts, int mechPts, int civPts, int metaPts, int chemPts, int eeePts, int archiPts) {
         this.eventName = eventName;
         this.desc = desc;
         Image = image;
-        this.rules = rules;
+        this.venue = venue;
         this.csePts = csePts;
         this.ecePts = ecePts;
         this.mechPts = mechPts;
@@ -31,12 +37,7 @@ public class Event implements Serializable {
         this.archiPts = archiPts;
     }
 
-    int mechPts;
-    int civPts;
-    int metaPts;
-    int chemPts;
-    int eeePts;
-    int archiPts;
+    
     public String getImage() {
         return Image;
     }
@@ -65,12 +66,12 @@ public class Event implements Serializable {
         this.desc = desc;
     }
 
-    public String getRules() {
-        return rules;
+    public String getVenue() {
+        return venue;
     }
 
-    public void setRules(String rules) {
-        this.rules = rules;
+    public void setveVue(String venue) {
+        this.venue = venue;
     }
 
     public int getCsePts() {

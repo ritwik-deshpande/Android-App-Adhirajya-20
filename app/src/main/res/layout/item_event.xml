@@ -41,6 +41,10 @@
                 android:textAlignment="center"
                 android:textAllCaps="true"
 
+                android:textColor="@color/colorPrimaryDark"
+
+                android:fontFamily="@font/title"
+
                 android:id="@+id/event_name"
                 android:text="Cultural"/>
 

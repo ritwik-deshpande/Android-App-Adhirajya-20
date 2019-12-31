@@ -5,7 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    android:background="@drawable/background"
     tools:context=".EventDetails"
+
     tools:showIn="@layout/activity_event_details">
 
     <ScrollView
@@ -39,8 +41,9 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:layout_marginStart="8dp"
-                        android:text="Information:"
-                        android:textColor="@color/colorPrimary"
+                        android:text="DESCRIPTION"
+                        android:fontFamily="@font/title"
+                        android:textColor="@color/colorPrimaryDark"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:layout_marginLeft="8dp" />
 
@@ -48,6 +51,9 @@
                         android:id="@+id/description_textView"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:fontFamily="@font/content"
+                        android:textColor="@color/colorPrimary"
+                        android:text="Some Description"
                         android:layout_marginBottom="4dp"
                         android:paddingEnd="8dp"
                         android:paddingStart="8dp"
@@ -75,19 +81,37 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:layout_marginStart="8dp"
-                        android:text="Rules :"
-                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/title"
+                        android:text="VENUE"
+                        android:textColor="@color/colorPrimaryDark"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:layout_marginLeft="8dp" />
 
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
                     <android.support.v7.widget.AppCompatTextView
-                        android:id="@+id/rules_textView"
+                        android:id="@+id/venue"
+                        android:padding="10dp"
+                        android:fontFamily="@font/content"
+                        android:textColor="@color/colorPrimary"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:paddingEnd="8dp"
-                        android:paddingStart="8dp"
-                        android:autoLink="web"/>
+                        android:text="VNIT Ground" />
+
+                    <android.support.v7.widget.AppCompatImageButton
+                            android:id="@+id/map"
+                            android:layout_width="20dp"
+                            android:layout_height="25dp"
+                            android:padding="10dp"
+                            android:layout_marginLeft="10dp"
+                            style="@style/Base.Widget.AppCompat.Button.Borderless"
+                            android:src="@drawable/ic_location_on_black_24dp"
+                            />
+
+                </LinearLayout>
 
                 </LinearLayout>
 
@@ -110,23 +134,309 @@
                         android:layout_height="wrap_content"
                         android:layout_marginTop="4dp"
                         android:layout_marginStart="8dp"
-                        android:text="Points Table:"
-                        android:textColor="@color/colorPrimary"
+                        android:fontFamily="@font/title"
+                        android:textSize="20sp"
+                        android:layout_marginBottom="10dp"
+                        android:text="POINTS TABLE"
+                        android:textColor="@color/colorPrimaryDark"
                         android:textAppearance="@style/TextAppearance.AppCompat.Large"
                         android:layout_marginLeft="8dp" />
 
-                    <android.support.v7.widget.AppCompatTextView
-                        android:id="@+id/points_textView"
-                        android:layout_width="wrap_content"
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        android:layout_marginBottom="4dp"
-                        android:textAlignment="center"
-                        android:layout_marginLeft="20dp"
-                        android:textSize="20dp"
-                        android:paddingEnd="8dp"
-                        android:text="CSE : 20\nECE : 40 \nCSE : 20\nCSE : 20\nCSE : 20\nCSE : 20\nCSE : 20\nCSE : 20\n"
-                        android:paddingStart="8dp"
-                        android:autoLink="web"/>
+
+                        android:orientation="horizontal">
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:paddingLeft="30dp"
+                            android:id="@+id/points_dept_1"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+
+                            android:text=" 1. CSE"
+
+                            android:autoLink="web"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/points_textView_1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="50dp"
+                            android:paddingEnd="8dp"
+                            android:text=" 20"
+                            android:paddingStart="8dp"
+                            android:autoLink="web"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:paddingLeft="30dp"
+                            android:id="@+id/points_dept_2"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+
+                            android:text=" 1. CHEM-MIN"
+
+                            android:autoLink="web"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/points_textView_2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="50dp"
+                            android:paddingEnd="8dp"
+                            android:text=" 20"
+                            android:paddingStart="8dp"
+                            android:autoLink="web"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:paddingLeft="30dp"
+                            android:id="@+id/points_dept_3"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+
+                            android:text=" 1. CSE"
+
+                            android:autoLink="web"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/points_textView_3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="50dp"
+                            android:paddingEnd="8dp"
+                            android:text=" 20"
+                            android:paddingStart="8dp"
+                            android:autoLink="web"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:paddingLeft="30dp"
+                            android:id="@+id/points_dept_4"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+
+                            android:text=" 1. CSE"
+
+                            android:autoLink="web"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/points_textView_4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="50dp"
+                            android:paddingEnd="8dp"
+                            android:text=" 20"
+                            android:paddingStart="8dp"
+                            android:autoLink="web"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:paddingLeft="30dp"
+                            android:id="@+id/points_dept_5"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+
+                            android:text=" 1. CSE"
+
+                            android:autoLink="web"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/points_textView_5"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="50dp"
+                            android:paddingEnd="8dp"
+                            android:text=" 20"
+                            android:paddingStart="8dp"
+                            android:autoLink="web"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:paddingLeft="30dp"
+                            android:id="@+id/points_dept_6"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+
+                            android:text=" 1. CSE"
+
+                            android:autoLink="web"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/points_textView_6"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="50dp"
+                            android:paddingEnd="8dp"
+                            android:text=" 20"
+                            android:paddingStart="8dp"
+                            android:autoLink="web"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:paddingLeft="30dp"
+                            android:id="@+id/points_dept_7"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+
+                            android:text=" 1. CSE"
+
+                            android:autoLink="web"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/points_textView_7"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="50dp"
+                            android:paddingEnd="8dp"
+                            android:text=" 20"
+                            android:paddingStart="8dp"
+                            android:autoLink="web"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:orientation="horizontal">
+
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:paddingLeft="30dp"
+                            android:id="@+id/points_dept_8"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+
+                            android:text=" 1. CSE"
+
+                            android:autoLink="web"/>
+
+                        <android.support.v7.widget.AppCompatTextView
+                            android:id="@+id/points_textView_8"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="3"
+                            android:fontFamily="@font/content"
+                            android:textColor="@color/colorPrimaryDark"
+                            android:textSize="15sp"
+                            android:layout_marginLeft="50dp"
+                            android:paddingEnd="8dp"
+                            android:text=" 20"
+                            android:paddingStart="8dp"
+                            android:autoLink="web"/>
+
+                    </LinearLayout>
+
+
+
+
+
 
                 </LinearLayout>
 

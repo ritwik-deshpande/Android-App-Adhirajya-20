@@ -35,14 +35,8 @@ public class EventDetails extends AppCompatActivity {
         toolbar.setNavigationIcon(R.drawable.ic_arrow_back_white_24dp);
         setSupportActionBar(toolbar);
 
-//        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
-//        fab.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-//                        .setAction("Action", null).show();
-//            }
-//        });
+        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+
 
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
@@ -64,6 +58,19 @@ public class EventDetails extends AppCompatActivity {
         eventVenue.setText(event.getVenue());
 
         ImageButton map = findViewById(R.id.map);
+
+
+        fab.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent msg_intent = new Intent(Intent.ACTION_SEND);
+
+                msg_intent.putExtra(Intent.EXTRA_TEXT,"Hola VNITian,join me for the "+ event.getEventName()+" event in Adhirajya\'20. Download the app to know more. Here is the brief description of the event \n"+event.getDesc());
+                msg_intent.setType("text/plain");
+                startActivity(msg_intent);
+
+            }
+        });
         map.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -113,8 +120,8 @@ public class EventDetails extends AppCompatActivity {
         for (Map.Entry<String, Integer> en : hm1.entrySet()) {
 
 
-            depts.get(counter).setText(en.getKey());
-//            pts.get(counter).setText(en.getValue());
+            depts.get(counter).setText(Integer.toString(counter + 1)+".   "+en.getKey());
+            pts.get(counter).setText(Integer.toString(en.getValue()));
             counter = counter + 1;
         }
 

@@ -9,37 +9,50 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="left"
-        android:textColor="#000000"
+        android:textAllCaps="true"
+        android:textColor="#ffffff"
         android:fontFamily="@font/title"
         android:text="Event Points Table"
         android:layout_marginVertical="10dp"
         android:layout_marginHorizontal="10dp"
-        android:textSize="15sp"
+        android:textSize="13sp"
         android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:layout_height="wrap_content">
+
+
+
+
     <LinearLayout
         android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
+        android:layout_width="60dp"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="10dp"
-        android:orientation="horizontal"
-        android:background="@color/colorPrimary"
+        android:orientation="vertical"
+
 
         >
         <TextView
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
+            android:layout_width="60dp"
+            android:layout_height="55dp"
             android:layout_gravity="left"
             android:layout_weight="1"
+            android:textAlignment="center"
+            android:padding="3dp"
             android:textColor="#ffffff"
             android:fontFamily="@font/content"
             android:text="DEPT"
-            android:textSize="10sp"
+            android:textSize="15sp"
             android:textStyle="bold" />
         <TextView
             android:layout_height="wrap_content"
-            android:layout_width="20dp"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
             android:layout_gravity="center"
-            android:textSize="10sp"
+            android:textSize="13sp"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:fontFamily="@font/content"
@@ -47,19 +60,21 @@
             android:textStyle = "bold"/>
         <TextView
             android:layout_height="wrap_content"
-            android:layout_width="20dp"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
             android:layout_gravity="center"
+            android:textSize="13sp"
+            android:layout_weight="1"
             android:textColor="#ffffff"
             android:fontFamily="@font/content"
-            android:textSize="10sp"
-            android:layout_weight="1"
             android:text="Day 2"
             android:textStyle = "bold"/>
         <TextView
             android:layout_height="wrap_content"
-            android:layout_width="20dp"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
             android:layout_gravity="center"
-            android:textSize="10sp"
+            android:textSize="13sp"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:fontFamily="@font/content"
@@ -67,9 +82,10 @@
             android:textStyle = "bold"/>
         <TextView
             android:layout_height="wrap_content"
-            android:layout_width="20dp"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
             android:layout_gravity="center"
-            android:textSize="10sp"
+            android:textSize="13sp"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:fontFamily="@font/content"
@@ -77,9 +93,10 @@
             android:textStyle = "bold"/>
         <TextView
             android:layout_height="wrap_content"
-            android:layout_width="20dp"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
             android:layout_gravity="center"
-            android:textSize="10sp"
+            android:textSize="13sp"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:fontFamily="@font/content"
@@ -87,9 +104,10 @@
             android:textStyle = "bold"/>
         <TextView
             android:layout_height="wrap_content"
-            android:layout_width="20dp"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
             android:layout_gravity="center"
-            android:textSize="10sp"
+            android:textSize="13sp"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:fontFamily="@font/content"
@@ -97,19 +115,22 @@
             android:textStyle = "bold"/>
         <TextView
             android:layout_height="wrap_content"
-            android:layout_width="20dp"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
             android:layout_gravity="center"
-            android:textSize="10sp"
+            android:textSize="13sp"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:fontFamily="@font/content"
             android:text="Day 7"
             android:textStyle = "bold"/>
+
         <TextView
             android:layout_height="wrap_content"
-            android:layout_width="20dp"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
             android:layout_gravity="center"
-            android:textSize="10sp"
+            android:textSize="13sp"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:fontFamily="@font/content"
@@ -117,33 +138,36 @@
             android:textStyle = "bold"/>
         <TextView
             android:layout_height="wrap_content"
-            android:layout_width="20dp"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
             android:layout_gravity="center"
-            android:textSize="10sp"
+            android:textSize="13sp"
+            android:layout_weight="1"
             android:textColor="#ffffff"
             android:fontFamily="@font/content"
-            android:layout_weight="1"
             android:text="Day 9"
             android:textStyle = "bold"/>
-
         <TextView
             android:layout_height="wrap_content"
-            android:layout_width="30dp"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
             android:layout_gravity="center"
-            android:textSize="10sp"
+            android:textSize="13sp"
             android:layout_weight="1"
             android:textColor="#ffffff"
             android:fontFamily="@font/content"
             android:text="Day 10"
             android:textStyle = "bold"/>
+
         <TextView
             android:layout_height="wrap_content"
-            android:layout_width="30dp"
+            android:layout_width="wrap_content"
+            android:padding="3dp"
             android:layout_gravity="center"
-            android:textSize="10sp"
+            android:textSize="13sp"
+            android:layout_weight="1"
             android:textColor="#ffffff"
             android:fontFamily="@font/content"
-            android:layout_weight="1"
             android:text="Total"
             android:textStyle = "bold"/>
 
@@ -151,169 +175,19 @@
 
 
     <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
 
         android:layout_marginHorizontal="10dp"
         android:id="@+id/points_event_recyclerview"
         >
     </android.support.v7.widget.RecyclerView>
-
-    <TextView
-
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="left"
-        android:textColor="#000000"
-        android:fontFamily="@font/title"
-        android:text="Enthu Points Table"
-        android:layout_marginVertical="10dp"
-        android:layout_marginHorizontal="10dp"
-
-        android:textSize="15sp"
-        android:textStyle="bold" />
-
-    <LinearLayout
-        android:layout_marginTop="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginHorizontal="10dp"
-        android:orientation="horizontal"
-        android:background="@color/colorPrimary"
-
-        >
-        <TextView
-            android:layout_width="30dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="left"
-            android:layout_weight="1"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/content"
-            android:text="DEPT"
-            android:textSize="10sp"
-            android:textStyle="bold" />
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="20dp"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:layout_weight="1"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/content"
-            android:text="Day 1"
-            android:textStyle = "bold"/>
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="20dp"
-            android:layout_gravity="center"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/content"
-            android:textSize="10sp"
-            android:layout_weight="1"
-            android:text="Day 2"
-            android:textStyle = "bold"/>
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="20dp"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:layout_weight="1"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/content"
-            android:text="Day 3"
-            android:textStyle = "bold"/>
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="20dp"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:layout_weight="1"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/content"
-            android:text="Day 4"
-            android:textStyle = "bold"/>
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="20dp"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:layout_weight="1"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/content"
-            android:text="Day 5"
-            android:textStyle = "bold"/>
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="20dp"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:layout_weight="1"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/content"
-            android:text="Day 6"
-            android:textStyle = "bold"/>
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="20dp"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:layout_weight="1"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/content"
-            android:text="Day 7"
-            android:textStyle = "bold"/>
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="20dp"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:layout_weight="1"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/content"
-            android:text="Day 8"
-            android:textStyle = "bold"/>
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="20dp"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/content"
-            android:layout_weight="1"
-            android:text="Day 9"
-            android:textStyle = "bold"/>
-
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="30dp"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:layout_weight="1"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/content"
-            android:text="Day 10"
-            android:textStyle = "bold"/>
-        <TextView
-            android:layout_height="wrap_content"
-            android:layout_width="30dp"
-            android:layout_gravity="center"
-            android:textSize="10sp"
-            android:textColor="#ffffff"
-            android:fontFamily="@font/content"
-            android:layout_weight="1"
-            android:text="Total"
-            android:textStyle = "bold"/>
-
     </LinearLayout>
 
-    <android.support.v7.widget.RecyclerView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
 
-        android:layout_marginHorizontal="10dp"
-        android:id="@+id/enthu_points_event_recyclerview"
-        >
-    </android.support.v7.widget.RecyclerView>
+
+
 
 
 

@@ -26,6 +26,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.iid.FirebaseInstanceId;
 
 public class MainActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -45,7 +46,7 @@ public class MainActivity extends AppCompatActivity
 
 
 
-        setTitle("ADHIRAJYA20");
+        setTitle("");
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -56,22 +57,13 @@ public class MainActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        fb = findViewById(R.id.fb);
+
         insta = findViewById(R.id.insta);
 
-        fb.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                String url = "http://vnit.ac.in/";
-                Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse(url));
-                startActivity(i);
-            }
-        });
         insta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                String url = "http://vnit.ac.in/";
+                String url = "https://www.instagram.com/igvnit/";
                 Intent i = new Intent(Intent.ACTION_VIEW);
                 i.setData(Uri.parse(url));
                 startActivity(i);
@@ -79,11 +71,21 @@ public class MainActivity extends AppCompatActivity
         });
 
 //        FirebaseDatabase database = FirebaseDatabase.getInstance();
-//        DatabaseReference myRef = database.getReference("child6");
-//        DatabaseReference myRef2 = database.getReference().child("Points");
+//        DatabaseReference myRef = database.getReference("Events").child("Literary Events").child("events");
+//
 //        Log.d("TAG","Writing to Firebase");
 //
-//        myRef.setValue("Hello, World!");
+//
+//        for(int i =0;i<=15;i++){
+//            myRef.child(Integer.toString(i)).child("csePts").setValue(0);
+//            myRef.child(Integer.toString(i)).child("civPts").setValue(0);
+//            myRef.child(Integer.toString(i)).child("eeePts").setValue(0);
+//            myRef.child(Integer.toString(i)).child("ecePts").setValue(0);
+//            myRef.child(Integer.toString(i)).child("metaPts").setValue(0);
+//            myRef.child(Integer.toString(i)).child("mechPts").setValue(0);
+//            myRef.child(Integer.toString(i)).child("chemPts").setValue(0);
+//            myRef.child(Integer.toString(i)).child("archiPts").setValue(0);
+//        }
 //
 //        final String[] value = new String[1];
 //
@@ -117,7 +119,15 @@ public class MainActivity extends AppCompatActivity
 
 
 
+        String token = FirebaseInstanceId.getInstance().getToken();
 
+        //for now we are displaying the token in the log
+        //copy it as this method is called only when the new token is generated
+        //and usually new token is only generated when t
+        // he app is reinstalled or the data is cleared
+        Log.d("TAG", "Token is"+token);
+
+       // d40xcmwyODk:APA91bGUxdL0xPbwk4qrbp186ukC86RsZyIlkgsK1E2-zH5D68zUMNmX05e6EmC3BMnPKGORHYdaikHyS3oHveXwPZ7Gq0toUgGD6vfRcz7lXbu-aVFWyFpKXv9rQDN3wIEjwzOVQrQm
 
 
 
@@ -136,6 +146,7 @@ public class MainActivity extends AppCompatActivity
         viewPagerAdapter.addFragment(new EventFragment(), "EVENTS");
 //        viewPagerAdapter.addFragment(new EventFragment(), "departments");
         viewPagerAdapter.addFragment(new PointsFragment(), "scoreboard");
+        viewPagerAdapter.addFragment(new EnthuPointsFragment(), "enthu points");
 
 
 
@@ -188,10 +199,23 @@ public class MainActivity extends AppCompatActivity
             startActivity(i);
 
         } else if (id == R.id.nav_rules) {
+            String url = "https://drive.google.com/file/d/15AnUx4BuKR6_TThkdRpF3BWDrHeyLXWr/view?usp=sharing";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
 
-        } else if (id == R.id.nav_schedule) {
+        }else if (id == R.id.nav_dev) {
+            Intent i = new Intent(MainActivity.this, Developers.class);
+            startActivity(i);
 
-        } else if (id == R.id.nav_pics) {
+        }
+
+        else if (id == R.id.nav_schedule) {
+
+            String url = "https://drive.google.com/file/d/15AnUx4BuKR6_TThkdRpF3BWDrHeyLXWr/view?usp=sharing";
+            Intent i = new Intent(Intent.ACTION_VIEW);
+            i.setData(Uri.parse(url));
+            startActivity(i);
 
         }
 

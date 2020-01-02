@@ -5,6 +5,10 @@ public class News {
     String news_text;
     String news_image;
 
+    public News(){
+
+    }
+
     public News(String news_text, String news_image) {
         this.news_text = news_text;
         this.news_image = news_image;

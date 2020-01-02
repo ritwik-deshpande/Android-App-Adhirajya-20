@@ -1,162 +1,190 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
     android:orientation="vertical"
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="wrap_content"
+
     android:layout_height="wrap_content">
 
 
-
         <LinearLayout
-            android:layout_width="match_parent"
+            android:layout_width="60dp"
             android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/department_name"
-                    android:layout_width="30dp"
-                    android:layout_height="wrap_content"
+
+                    android:layout_height="55dp"
                     android:layout_gravity="left"
                     android:layout_weight="1"
-                    android:fontFamily="@font/content"
-                    android:textColor="#000000"
-                    android:text="CSE"
+                    android:layout_width="60dp"
+                    android:padding="3dp"
 
-                    android:textSize="10sp"
+                    android:textColor="#ffffff"
+                    android:fontFamily="@font/content"
+
+                    android:text="CHEM-MIN"
+                    android:textSize="15sp"
                     android:textStyle="bold" />
 
 
                 <TextView
                     android:id="@+id/day_1"
                     android:layout_height="wrap_content"
-                    android:layout_width="20dp"
-                    android:layout_gravity="left"
-                    android:textSize="10sp"
+
+                    android:layout_width="match_parent"
+                    android:padding="3dp"
+                    android:textColor="#ffffff"
                     android:layout_weight="1"
+                    android:textSize="13sp"
                     android:fontFamily="@font/content"
+                    android:textAlignment="center"
                     android:text="10"
-                    android:layout_marginVertical="0.1dp"
-                    android:layout_marginHorizontal="0.1dp"
+
                     android:textStyle = "bold"/>
+
                 <TextView
                     android:id="@+id/day_2"
                     android:layout_height="wrap_content"
-                    android:layout_width="20dp"
-                    android:layout_gravity="left"
-                    android:textSize="10sp"
-                    android:fontFamily="@font/content"
+
+                    android:layout_width="match_parent"
+                    android:padding="3dp"
+                    android:textColor="#ffffff"
                     android:layout_weight="1"
+                    android:fontFamily="@font/content"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
                     android:text="10"
-                    android:layout_marginVertical="0.1dp"
-                    android:layout_marginHorizontal="0.1dp"
+
                     android:textStyle = "bold"/>
                 <TextView
                     android:id="@+id/day_3"
                     android:layout_height="wrap_content"
-                    android:layout_width="20dp"
-                    android:layout_gravity="left"
-                    android:textSize="10sp"
+
+                    android:layout_width="match_parent"
+                    android:padding="3dp"
+                    android:textColor="#ffffff"
                     android:layout_weight="1"
-                    android:text="10"
+                    android:textSize="13sp"
                     android:fontFamily="@font/content"
-                    android:layout_marginVertical="0.1dp"
-                    android:layout_marginHorizontal="0.1dp"
+                    android:textAlignment="center"
+                    android:text="10"
+
                     android:textStyle = "bold"/>
                 <TextView
                     android:id="@+id/day_4"
                     android:layout_height="wrap_content"
-                    android:layout_width="20dp"
-                    android:layout_gravity="left"
-                    android:textSize="10sp"
+
+                    android:layout_width="match_parent"
+                    android:padding="3dp"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
                     android:layout_weight="1"
                     android:fontFamily="@font/content"
+                    android:textAlignment="center"
                     android:text="10"
-                    android:layout_marginVertical="0.1dp"
-                    android:layout_marginHorizontal="0.1dp"
+
                     android:textStyle = "bold"/>
                 <TextView
                     android:id="@+id/day_5"
                     android:layout_height="wrap_content"
-                    android:layout_width="20dp"
-                    android:layout_gravity="left"
-                    android:textSize="10sp"
+
+                    android:layout_width="match_parent"
+                    android:padding="3dp"
+                    android:textColor="#ffffff"
                     android:layout_weight="1"
                     android:fontFamily="@font/content"
+                    android:textSize="13sp"
+                    android:textAlignment="center"
                     android:text="10"
-                    android:layout_marginVertical="0.1dp"
-                    android:layout_marginHorizontal="0.1dp"
+
                     android:textStyle = "bold"/>
                 <TextView
                     android:id="@+id/day_6"
                     android:layout_height="wrap_content"
-                    android:layout_width="20dp"
-                    android:layout_gravity="left"
-                    android:textSize="10sp"
+
+                    android:layout_width="match_parent"
+                    android:padding="3dp"
+                    android:textColor="#ffffff"
                     android:layout_weight="1"
+                    android:textSize="13sp"
                     android:fontFamily="@font/content"
+                    android:textAlignment="center"
                     android:text="10"
-                    android:layout_marginVertical="0.1dp"
-                    android:layout_marginHorizontal="0.1dp"
+
                     android:textStyle = "bold"/>
                 <TextView
                     android:id="@+id/day_7"
                     android:layout_height="wrap_content"
-                    android:layout_width="20dp"
-                    android:layout_gravity="left"
-                    android:fontFamily="@font/content"
-                    android:textSize="10sp"
+
+                    android:layout_width="match_parent"
+                    android:padding="3dp"
+                    android:textColor="#ffffff"
                     android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/content"
+                    android:textAlignment="center"
                     android:text="10"
-                    android:layout_marginVertical="0.1dp"
-                    android:layout_marginHorizontal="0.1dp"
+
                     android:textStyle = "bold"/>
                 <TextView
                     android:id="@+id/day_8"
                     android:layout_height="wrap_content"
-                    android:layout_width="20dp"
-                    android:layout_gravity="left"
-                    android:textSize="10sp"
-                    android:fontFamily="@font/content"
+
+                    android:layout_width="match_parent"
+                    android:padding="3dp"
+                    android:textColor="#ffffff"
+                    android:textSize="13sp"
                     android:layout_weight="1"
+                    android:fontFamily="@font/content"
+                    android:textAlignment="center"
                     android:text="10"
-                    android:layout_marginVertical="0.1dp"
-                    android:layout_marginHorizontal="0.1dp"
+
                     android:textStyle = "bold"/>
                 <TextView
                     android:id="@+id/day_9"
                     android:layout_height="wrap_content"
-                    android:layout_width="20dp"
-                    android:layout_gravity="left"
-                    android:fontFamily="@font/content"
-                    android:textSize="10sp"
+
+                    android:layout_width="match_parent"
+                    android:padding="3dp"
+                    android:textColor="#ffffff"
                     android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/content"
+                    android:textAlignment="center"
                     android:text="10"
-                    android:layout_marginVertical="0.1dp"
-                    android:layout_marginHorizontal="0.1dp"
+
                     android:textStyle = "bold"/>
                 <TextView
                     android:id="@+id/day_10"
                     android:layout_height="wrap_content"
-                    android:layout_width="20dp"
-                    android:layout_gravity="left"
-                    android:textSize="10sp"
-                    android:fontFamily="@font/content"
+
+                    android:layout_width="match_parent"
+                    android:padding="3dp"
+                    android:textColor="#ffffff"
                     android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/content"
+                    android:textAlignment="center"
                     android:text="10"
-                    android:layout_marginVertical="0.1dp"
-                    android:layout_marginHorizontal="0.1dp"
+
                     android:textStyle = "bold"/>
+
                 <TextView
                     android:id="@+id/total"
                     android:layout_height="wrap_content"
-                    android:layout_width="20dp"
-                    android:layout_gravity="left"
-                    android:textSize="10sp"
+
+                    android:layout_width="match_parent"
+                    android:padding="3dp"
+                    android:textColor="#ffffff"
                     android:layout_weight="1"
+                    android:textSize="13sp"
+                    android:fontFamily="@font/title"
+                    android:textAlignment="center"
                     android:text="10"
-                    android:textColor="#000000"
-                    android:layout_marginVertical="0.1dp"
-                    android:layout_marginHorizontal="0.1dp"
+
                     android:textStyle = "bold"/>
+
 
         </LinearLayout>
 

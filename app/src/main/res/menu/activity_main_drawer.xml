@@ -6,24 +6,25 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/nav_about"
-            android:icon="@drawable/ic_menu_camera"
+            android:icon="@drawable/ic_info_outline_black_24dp"
             android:title="About IG" />
         <item
             android:id="@+id/nav_team"
-            android:icon="@drawable/ic_menu_gallery"
+            android:icon="@drawable/ic_group_black_24dp"
             android:title="Our Team" />
         <item
+            android:id="@+id/nav_dev"
+            android:icon="@drawable/ic_group_black_24dp"
+            android:title="Developers" />
+        <item
             android:id="@+id/nav_rules"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_book_black_24dp"
             android:title="Rule Book" />
         <item
             android:id="@+id/nav_schedule"
-            android:icon="@drawable/ic_menu_slideshow"
+            android:icon="@drawable/ic_book_black_24dp"
             android:title="Schedule of Events" />
-        <item
-            android:id="@+id/nav_pics"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Pic of the Day" />
+
     </group>
 
 <!--    <item android:title="Communicate">-->

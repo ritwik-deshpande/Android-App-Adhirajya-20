@@ -15,6 +15,7 @@ import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.LinearLayout;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -103,11 +104,10 @@ public class PointsFragment extends Fragment {
                 Log.d("TAG","DATA GETIING FILLED");
 
                 departmentlist1 = new ArrayList<Department>();
-                departmentlist2 = new ArrayList<Department>();
+
                 for(DataSnapshot snapshot:dataSnapshot.getChildren()){
 
                     departmentlist1.add(snapshot.getValue(Department.class));
-                    departmentlist2.add(snapshot.getValue(Department.class));
 
 
 
@@ -137,75 +137,40 @@ public class PointsFragment extends Fragment {
 
      //   Log.d("TAGGGGG","The lst size is"+departmentlist.size());
 
-        recyclerView.setLayoutManager(new GridLayoutManager(getContext(),1));
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL,false));
 
         order("Main Events");
 
         for(int i=0;i<8;i++) {
             Log.d("TAG", "Dname:" + departmentlist1.get(i).getDepartmentName() );
         }
-        PointsAdapter pointsAdapter = new PointsAdapter(getContext(),departmentlist1,"Main Events");
+        PointsAdapter pointsAdapter = new PointsAdapter(getContext(),departmentlist1,"Main Events",R.layout.item_points_event);
         recyclerView.setAdapter(pointsAdapter);
 
-        recyclerView2 =  (RecyclerView)v.findViewById(R.id.enthu_points_event_recyclerview);
-
-        recyclerView2.setLayoutManager(new GridLayoutManager(getContext(),1));
-        order("Enthu Points");
-        PointsAdapter pointsAdapter2 = new PointsAdapter(getContext(),departmentlist2,"Enthu Points");
-        recyclerView2.setAdapter(pointsAdapter2);
-
-//        departmentlist.clear();
     }
 
 
     public void order(final String label){
-        if(label.equals("Main Events")) {
+
             Collections.sort(departmentlist1, new Comparator<Department>() {
                 @RequiresApi(api = Build.VERSION_CODES.KITKAT)
                 @Override
                 public int compare(Department department, Department t1) {
 
 
-                    int totalScore1 = 0;
+                    double totalScore1 = 0;
                     for (int j = 0; j < 10; j++) {
                         totalScore1 = totalScore1 + (department.getDailyScores().get(j)).intValue();
                     }
-                    int totalScore2 = 0;
+                    double totalScore2 = 0;
                     for (int j = 0; j < 10; j++) {
                         totalScore2 = totalScore2 + (t1.getDailyScores().get(j)).intValue();
                     }
 
                     Log.d("TAG", "Comparing total scores" + totalScore1 + " i  " + totalScore2);
 
-                    return Integer.compare(totalScore2, totalScore1);
-//
+                    return Double.compare(totalScore2, totalScore1);
 
-
-                }
-            });
-        }
-
-        else{
-            Collections.sort(departmentlist2, new Comparator<Department>() {
-                @RequiresApi(api = Build.VERSION_CODES.KITKAT)
-                @Override
-                public int compare(Department department, Department t1) {
-
-
-                    double totalScore1 = 0.0;
-                    for (int j=0;j<10;j++){
-                        totalScore1 = totalScore1 + (department.getEnthuPoints().get(j));
-                    }
-                    double totalScore2 = 0.0;
-                    for (int j=0;j<10;j++){
-                        totalScore2 = totalScore2 + (t1.getEnthuPoints().get(j));
-                    }
-                    if (totalScore2>totalScore1)
-                        return 1;
-                    else if(totalScore2<totalScore1)
-                        return -1;
-                    return 0;
-//
 
 
                 }
@@ -213,6 +178,9 @@ public class PointsFragment extends Fragment {
 
 
 
+
+
+
         }
-    }
+
 }

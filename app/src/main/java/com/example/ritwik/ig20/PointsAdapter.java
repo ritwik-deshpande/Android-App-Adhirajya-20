@@ -1,6 +1,7 @@
 package com.example.ritwik.ig20;
 
 import android.content.Context;
+import android.support.annotation.LayoutRes;
 import android.support.annotation.NonNull;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
@@ -17,11 +18,14 @@ public class PointsAdapter extends  RecyclerView.Adapter<PointsAdapter.MyViewHol
     Context context;
     List<Department> list;
     String label;
+    int layout;
 
-    public PointsAdapter(Context context, List<Department> list,String label) {
+
+    public PointsAdapter(Context context, List<Department> list, String label, @LayoutRes int layout) {
         this.context = context;
         this.list = list;
         this.label = label;
+        this.layout = layout;
         Log.d("TAGGGGG","The list size in Adpater is"+list.size());
         for(int i=0;i<8;i++) {
             Log.d("TAG", "Dname Adpater:" +list.get(i).getDepartmentName() );
@@ -35,7 +39,7 @@ public class PointsAdapter extends  RecyclerView.Adapter<PointsAdapter.MyViewHol
 
         View v;
 
-        v = LayoutInflater.from(context).inflate(R.layout.item_points_event,viewGroup,false);
+        v = LayoutInflater.from(context).inflate(layout,viewGroup,false);
 
         MyViewHolder myViewHolder=new MyViewHolder(v,context);
 
@@ -50,13 +54,13 @@ public class PointsAdapter extends  RecyclerView.Adapter<PointsAdapter.MyViewHol
         myViewHolder.departmentName.setText(list.get(i).getDepartmentName());
 
         if(label.equals("Main Events")){
-            int totalScore = 0;
+            double totalScore = 0;
             for (int j=0;j<10;j++){
                // Log.d("TAGGGGG","The Score is "+Integer.toString(list.get(i).getDailyScores()[j]));
-                myViewHolder.dailyScores.get(j).setText(Integer.toString(list.get(i).getDailyScores().get(j).intValue()));
-                totalScore = totalScore + (list.get(i).getDailyScores().get(j)).intValue();
+                myViewHolder.dailyScores.get(j).setText(Double.toString(list.get(i).getDailyScores().get(j)));
+                totalScore = totalScore + (list.get(i).getDailyScores().get(j));
             }
-            myViewHolder.totalScore.setText(Integer.toString(totalScore));
+            myViewHolder.totalScore.setText(Double.toString(totalScore));
 
         }
         else if(label.equals("Enthu Points")){

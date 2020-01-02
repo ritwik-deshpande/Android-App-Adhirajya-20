@@ -41,7 +41,7 @@
                 android:textAlignment="center"
                 android:textAllCaps="true"
 
-                android:textColor="@color/colorPrimaryDark"
+                android:textColor="#ffffff"
 
                 android:fontFamily="@font/title"
 

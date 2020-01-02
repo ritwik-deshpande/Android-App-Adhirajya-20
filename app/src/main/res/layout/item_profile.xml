@@ -3,6 +3,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+
     android:padding="15dp">
 
 
@@ -31,13 +32,15 @@
                     android:id="@+id/dp"
                     android:layout_width="80dp"
                     android:layout_height="80dp"
-                    android:src="@drawable/ic_launcher_background" />
+                    android:src="@drawable/yogesh" />
 
                 <android.support.v7.widget.AppCompatTextView
                     android:id="@+id/name"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerInParent="true"
+                    android:textAllCaps="true"
+                    android:fontFamily="@font/title"
                     android:layout_marginLeft="30dp"
                     android:layout_toRightOf="@+id/dp"
                     android:text="Sahish"
@@ -55,7 +58,9 @@
                 android:layout_marginStart="8dp"
                 android:layout_marginLeft="8dp"
                 android:layout_marginTop="4dp"
-                android:text="Publicity Incharge"
+                android:textAllCaps="true"
+                android:fontFamily="@font/title"
+                android:text="U.G Acadamic Secretary"
                 android:textAppearance="@style/TextAppearance.AppCompat.Large"
                 android:textColor="#000000"
                 android:padding="10dp"/>
@@ -74,6 +79,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/content"
                     android:textColor="#000000"
                     android:text="Email Id:" />
 
@@ -82,6 +88,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="3"
+                    android:fontFamily="@font/content"
                     android:textColor="#000000"
                     android:text="ritwikdeshpande01@gmail.com:" />
                 <android.support.v7.widget.AppCompatImageButton
@@ -90,7 +97,7 @@
                     android:layout_height="24dp"
                     android:layout_marginEnd="8dp"
                     style="@style/Base.Widget.AppCompat.Button.Borderless"
-                    android:src="@drawable/gmail_icon"
+                    android:src="@drawable/gmail"
                     android:layout_marginRight="8dp" />
 
             </android.support.v7.widget.LinearLayoutCompat>
@@ -110,6 +117,7 @@
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:textColor="#000000"
+                    android:fontFamily="@font/content"
                     android:text="Contact Numer:" />
 
                 <android.support.v7.widget.AppCompatTextView
@@ -117,6 +125,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
+                    android:fontFamily="@font/content"
                     android:textColor="#000000"
                     android:text="9820188402" />
 

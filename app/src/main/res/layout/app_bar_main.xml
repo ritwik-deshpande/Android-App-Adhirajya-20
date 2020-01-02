@@ -22,7 +22,8 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="20sp"
-                android:text="ADHIRAJYA'20"
+                android:text="ADHIRAJYA: IG'20 "
+                android:fontFamily="@font/title"
                 android:textColor="#ffffff">
 
             </TextView>
@@ -32,20 +33,13 @@
                 android:id="@+id/insta"
                 android:layout_width="36dp"
                 android:layout_height="36dp"
-                android:layout_marginLeft="130dp"
+                android:layout_marginLeft="50dp"
                 style="@style/Base.Widget.AppCompat.Button.Borderless"
 
-                android:src="@drawable/insta_logo"
+                android:src="@drawable/insta"
                 android:layout_marginRight="8dp" />
 
-            <android.support.v7.widget.AppCompatImageButton
-                android:id="@+id/fb"
-                android:layout_width="36dp"
-                android:layout_height="36dp"
-                android:layout_marginLeft="5dp"
-                style="@style/Base.Widget.AppCompat.Button.Borderless"
-                android:src="@drawable/fb_logo"
-                android:layout_marginRight="8dp" />
+
         </android.support.v7.widget.Toolbar>
 
 
